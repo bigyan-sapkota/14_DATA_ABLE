@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.blue-gradient {
+  background: rgb(29, 197, 224);
+  background: linear-gradient(
+    90deg,
+    rgba(29, 197, 224, 1) 0%,
+    rgba(29, 232, 185, 1) 100%
+  );
+}
+
+.purple-gradient {
+  background: rgb(161, 139, 212);
+  background: linear-gradient(
+    90deg,
+    rgba(161, 139, 212, 1) 0%,
+    rgba(140, 157, 212, 1) 100%
+  );
+}
+
+.hover-blue {
+  color: #1dc4e9;
+}
