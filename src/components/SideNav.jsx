@@ -11,7 +11,7 @@ import { RiPagesLine, RiShutDownLine } from "react-icons/ri";
 import { FiPieChart } from "react-icons/fi";
 import { LiaMap } from "react-icons/lia";
 import { FaBars } from "react-icons/fa6";
-import "./SideNav.css";
+import "./css/SideNav.css";
 
 const SideNav = () => {
   const sideNavItems = [
