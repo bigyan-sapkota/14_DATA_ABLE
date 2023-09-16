@@ -8,6 +8,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.red-gradient {
+  background: rgb(224, 29, 29);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 29, 29, 1) 0%,
+    rgba(232, 29, 29, 1) 100%
+  );
+}
+
 .blue-gradient {
   background: rgb(29, 197, 224);
   background: linear-gradient(

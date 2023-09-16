@@ -30,7 +30,7 @@ const salesItems = [
 
 const Sales = () => {
   return (
-    <div className="flex min-w-full mx-auto">
+    <div className="flex w-full justify-center">
       {salesItems.map((item, i) => {
         return (
           <div

@@ -2,11 +2,11 @@ import React from "react";
 
 const ProgressBar = ({ progressNum }) => {
   const progressBarColor =
-    progressNum >= 25 && progressNum < 75
-      ? "bg-blue-500"
-      : progressNum >= 75
-      ? "bg-green-500"
-      : "bg-red-500";
+    progressNum >= 0 && progressNum < 25
+      ? "red-gradient"
+      : progressNum >= 25 && progressNum < 75
+      ? "purple-gradient"
+      : "blue-gradient";
 
   return (
     <div className="w-full">
