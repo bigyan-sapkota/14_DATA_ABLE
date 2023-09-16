@@ -9,9 +9,14 @@ const ProgressBar = ({ progressNum }) => {
       : "bg-red-500";
 
   return (
-    <div>
+    <div className="w-full">
       <div className="bg-[#F4F7FA] h-[9px] w-full">
-        <div className={`h-[10px] w-1/2 ${progressBarColor} shadow-lg`}></div>
+        <div
+          className={`h-[10px] ${progressBarColor} shadow-lg`}
+          style={{
+            width: `${progressNum}%`,
+          }}
+        ></div>
       </div>
     </div>
   );
