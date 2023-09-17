@@ -15,6 +15,7 @@ const ProgressBar = ({ progressNum }) => {
           className={`h-[10px] ${progressBarColor} shadow-lg`}
           style={{
             width: `${progressNum}%`,
+            boxShadow: "5px 10px 20px #ccc",
           }}
         ></div>
       </div>

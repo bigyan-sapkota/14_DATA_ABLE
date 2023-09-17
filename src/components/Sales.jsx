@@ -35,7 +35,7 @@ const Sales = () => {
         return (
           <div
             key={i}
-            className="flex flex-col gap-4 w-[28%] p-6 m-4 bg-white shadow-md"
+            className="flex flex-col gap-4 w-[28%] py-8 px-5 m-4 bg-white shadow-md"
           >
             <div className="font-light text-base">{item.content}</div>
             <div className="flex items-center justify-between w-full">
