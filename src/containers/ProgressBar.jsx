@@ -10,9 +10,9 @@ const ProgressBar = ({ progressNum }) => {
 
   return (
     <div className="w-full">
-      <div className="bg-[#F4F7FA] h-[9px] w-full">
+      <div className="bg-[#F4F7FA] h-[7px] w-full">
         <div
-          className={`h-[10px] ${progressBarColor} shadow-lg`}
+          className={`h-[8px] ${progressBarColor} shadow-lg`}
           style={{
             width: `${progressNum}%`,
             boxShadow: "5px 10px 20px #ccc",

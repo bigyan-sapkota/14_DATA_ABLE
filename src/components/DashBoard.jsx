@@ -1,5 +1,6 @@
 import React from "react";
 import Sales from "./Sales";
+import Users from "../containers/Users";
 
 const DashBoard = () => {
   return (

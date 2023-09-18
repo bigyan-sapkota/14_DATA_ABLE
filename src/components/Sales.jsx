@@ -35,12 +35,21 @@ const Sales = () => {
         return (
           <div
             key={i}
-            className="flex flex-col gap-4 w-[28%] py-8 px-5 m-4 bg-white shadow-md"
+            className="flex flex-col gap-4 w-[30%] py-8 px-5 m-4 bg-white shadow-md"
           >
             <div className="font-light text-base">{item.content}</div>
             <div className="flex items-center justify-between w-full">
               <div className="flex justify-between items-center gap-2 text-[25px]">
-                {item.arrow}
+                <div
+                  className={`${
+                    i == 1 ? "text-red-600" : "text-blue-600"
+                  } text-2xl`}
+                  styles={{
+                    fontWeight: 900,
+                  }}
+                >
+                  {item.arrow}
+                </div>
                 <div className="font-light">${item.number}</div>
               </div>
               <div className="text-gray-500 text-sm">{`${item.percentage}%`}</div>
