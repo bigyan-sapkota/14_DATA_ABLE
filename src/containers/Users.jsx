@@ -84,7 +84,7 @@ const Users = () => {
         ))}
       </div>
 
-      <div>
+      <div className="ml-4 flex flex-col gap-4 w-[30%]">
         <UpcomingEvent />
         <IdeasLocation />
       </div>
