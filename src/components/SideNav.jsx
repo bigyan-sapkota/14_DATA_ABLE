@@ -53,7 +53,7 @@ const SideNav = () => {
     <div
       className="sidenav"
       style={{
-        boxShadow: "2px 1px 10px 2px rgba(0, 0, 0, 0.5)",
+        boxShadow: "2px 1px 10px 2px rgba(0, 0, 0, 0.45)",
         zIndex: "999",
       }}
     >

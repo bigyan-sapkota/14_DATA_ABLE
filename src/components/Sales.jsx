@@ -37,7 +37,9 @@ const Sales = () => {
             key={i}
             className="flex flex-col gap-4 w-[30%] py-8 px-5 m-4 bg-white shadow-md"
           >
-            <div className="font-light text-base">{item.content}</div>
+            <div className="font-light text-[15px] text-gray-900">
+              {item.content}
+            </div>
             <div className="flex items-center justify-between w-full">
               <div className="flex justify-between items-center gap-2 text-[25px]">
                 <div
@@ -50,7 +52,7 @@ const Sales = () => {
                 >
                   {item.arrow}
                 </div>
-                <div className="font-light">${item.number}</div>
+                <div className="font-light text-[24px]">${item.number}</div>
               </div>
               <div className="text-gray-500 text-sm">{`${item.percentage}%`}</div>
             </div>

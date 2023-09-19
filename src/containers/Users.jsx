@@ -1,6 +1,8 @@
 import React from "react";
 import DateAndTime from "./DateAndTime";
 import Button from "./Button";
+import UpcomingEvent from "../components/UpcomingEvent";
+import IdeasLocation from "../components/IdeasLocation";
 
 const UsersDetails = [
   {
@@ -27,32 +29,33 @@ const UsersDetails = [
 
 const Users = () => {
   return (
-    <div className="w-full mt-4">
+    <div className="flex w-full mt-4 gap-4">
       <div
-        className="bg-white ml-[1.5rem]"
+        className="bg-white ml-[1.5rem] shadow-md"
         style={{
           width: "calc(60% + 2rem)",
         }}
       >
         <div className="flex items-center py-4 gap-5">
           <div className="h-6 w-1 bg-[#04A9F5]"></div>
-          <div className="">Recent Users</div>
+          <div className="font-normal">Recent Users</div>
         </div>
         {UsersDetails.map((detail, i) => (
           <div
             key={i}
-            className="flex justify-between items-center py-4 px-3"
+            className="flex justify-between items-center py-4 px-3
+            hover:bg-[#f2fbfe] group"
             style={{
               borderTop: "1px solid #dcd9d9",
             }}
           >
             <div className="flex gap-7">
-              <div className="h-10 w-10">
+              <div className="h-9 w-9">
                 <img src={`./user-${i + 1}.jpeg`} alt="" />
               </div>
               <div className="">
-                <p className="font-normal text-[16px]">{detail.name}</p>
-                <p className="font-light text-[15px] overflow-hidden text-gray-500">
+                <p className="font-normal text-[15px]">{detail.name}</p>
+                <p className="font-light text-[14px] overflow-hidden text-gray-500 group-hover:text-black">
                   {detail.description}
                 </p>
               </div>
@@ -65,7 +68,7 @@ const Users = () => {
                   } w-2 h-2 rounded-full`}
                 ></div>
               </div>
-              <div className="text-gray-500">
+              <div className="text-gray-500 text-[15px]">
                 <DateAndTime />
               </div>
             </div>
@@ -79,6 +82,11 @@ const Users = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      <div>
+        <UpcomingEvent />
+        <IdeasLocation />
       </div>
     </div>
   );
