@@ -1,5 +1,5 @@
 .sidenav {
-  @apply flex flex-col w-[20vw] bg-[#3F4D67] h-fit px-6 pt-5;
+  @apply flex flex-col w-[22vw] bg-[#3F4D67] h-fit px-6 pt-5 shadow-2xl;
 }
 
 .sidenav__logo-and-menubar {

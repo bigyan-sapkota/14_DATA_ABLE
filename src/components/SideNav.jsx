@@ -50,7 +50,13 @@ const SideNav = () => {
   ];
 
   return (
-    <div className="sidenav">
+    <div
+      className="sidenav"
+      style={{
+        boxShadow: "2px 1px 10px 2px rgba(0, 0, 0, 0.5)",
+        zIndex: "999",
+      }}
+    >
       {/* LOGO AND MENUBAR SECTION */}
       <div className="sidenav__logo-and-menubar">
         <div className="sidenav_logo">
