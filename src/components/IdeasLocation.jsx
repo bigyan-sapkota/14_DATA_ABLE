@@ -22,11 +22,11 @@ const items = [
 
 const IdeasLocation = () => {
   return (
-    <div className="mt-4 py-6 bg-white shadow-md">
+    <div className="mt-4 py-5 bg-white shadow-md">
       <div>
         {items.map((item, i) => (
           <div key={i}>
-            <div className="p-4">
+            <div className="px-4 py-3">
               <div className={`flex items-center gap-10 w-full}`}>
                 <div>{item.icon}</div>
                 <div>

@@ -36,7 +36,7 @@ const Users = () => {
           width: "calc(60% + 2rem)",
         }}
       >
-        <div className="flex items-center py-4 gap-5">
+        <div className="flex items-center py-3 gap-5">
           <div className="h-6 w-1 bg-[#04A9F5]"></div>
           <div className="font-normal">Recent Users</div>
         </div>
