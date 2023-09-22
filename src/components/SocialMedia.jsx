@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaGooglePlusG, FaTwitter } from "react-icons/fa";
 import ProgressBar from "../containers/ProgressBar";
+import SmallProgressBar from "../containers/SmallProgressBar";
 
 const generateRandomNumbers = (min, max) => {
   const number = Math.floor(Math.random() * (max - min + 1) + min);
@@ -23,6 +24,7 @@ const arrayOfRandomTargets = [
   generateRandomNumbers(40000, 50000).toLocaleString(),
   generateRandomNumbers(70000, 80000).toLocaleString(),
 ];
+
 const socialMedias = [
   {
     logo: <FaFacebookF className="text-[#007BFF] text-4xl hover:scale-125" />,
@@ -71,11 +73,17 @@ const SocialMedia = () => {
                 <p className="text-[#6C757D]">
                   Target:<span className="text-black"> {media.target}</span>
                 </p>
+                <SmallProgressBar
+                  generateRandomNumbers={generateRandomNumbers}
+                />
               </div>
               <div>
                 <p className="text-[#6C757D] text-sm">
                   Duration:<span className="text-black"> {media.duration}</span>
                 </p>
+                <SmallProgressBar
+                  generateRandomNumbers={generateRandomNumbers}
+                />
               </div>
             </div>
           </div>
