@@ -2,6 +2,7 @@ import React from "react";
 import Sales from "./Sales";
 import Users from "../containers/Users";
 import SocialMedia from "./SocialMedia";
+import Rating from "../containers/Rating";
 
 const DashBoard = () => {
   return (
@@ -13,6 +14,10 @@ const DashBoard = () => {
 
       <div className="mt-4">
         <SocialMedia />
+      </div>
+
+      <div className="flex">
+        <Rating />
       </div>
     </div>
   );

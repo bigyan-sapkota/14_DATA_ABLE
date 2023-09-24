@@ -4,9 +4,11 @@ import DashBoard from "./components/DashBoard";
 
 const App = () => {
   return (
-    <div className="flex">
-      <SideNav />
-      <DashBoard />
+    <div>
+      <div className="flex">
+        <SideNav />
+        <DashBoard />
+      </div>
     </div>
   );
 };
